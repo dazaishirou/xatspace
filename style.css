@@ -1,0 +1,130 @@
+body { background: #1a1a1a; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+.sapphire {
+	margin: 0 auto;
+	background: #1b1b1b;
+	width: 530px;
+	border: 5px solid #1f1f1f;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+	padding:15px;
+	color: #f5f2f2;
+}
+
+.sapphire-wrapper {
+	padding: 20px;
+	background: #202020;
+}
+
+.sapphire-header {
+	height: 210px;
+	background:#000;
+	position: relative;
+	box-sizing: border-box;
+	padding: 25px;
+	overflow: hidden;
+}
+
+.blob-one {
+	background: #222;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	top: -25px;
+	left: -70px;
+	overflow: hidden;
+	z-index: 2;
+	border-radius: 100%;
+}
+
+.blob-two {
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	z-index: 2;
+	left: -150px;
+	top: 30px;
+	overflow: hidden;
+	background: var(--hex);
+	mix-blend-mode: difference;
+	z-index: 3;
+	border-radius: 100%;
+}
+
+.blob-one:before {
+	content: "";
+	position: absolute;
+	height: 461px;
+	width: 468px;
+	background-image: url(https://i.ibb.co/x5vhRKJ/transparent.png);
+	top: 0;
+	right: -30px;
+	opacity: .9;
+	background-size: 300px auto;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.sapphire-header h1 {
+	position: relative;
+	top: 130px;
+	z-index: 4;
+	background: rgba(60, 60, 60, .5);
+	padding: 8px;
+	text-align: right;
+	color: #fff;
+	font-size: 7px;
+	margin: 0;
+	font-family: merriweather, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	word-spacing: 8px;
+	font-weight: normal;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	margin-left: 70px;
+}
+
+.sapphire-header img {
+	position: absolute;
+	top: 110px;
+	left: -40px;
+	z-index: 4;
+	border-radius: 100%;
+	filter: grayscale(100%);
+	background: rgba(0, 0, 0, .3);
+	padding: 8px;
+}
+
+.sapphire-post {
+	background: #252525;
+	padding: 60px;
+	font-size: 13px;
+	text-align: justify;
+	line-height: 1.5em;
+}
+
+.sapphire-tagged {
+	padding: 5px;
+	font-size: 8px;
+	text-transform: uppercase;
+	margin: -55px;
+	margin-top: 20px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.sapphire-tagged a {
+	color: #aaa;
+	text-decoration: none;
+	background: #292929;
+	padding: 0px 6px;
+	display: inline-block;
+}
+
+
+
+#zome .sapphire-header h1:before {
+	content: "welcome to xatspace dazai"
+}
+
+#zome {
+	--hex: #b83b59;
+}
